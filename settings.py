@@ -18,10 +18,28 @@ SCENARIOS = {
         "COIN_COUNT": 50
     },
     "loot-crate": { 
-        "CRATE_DENSITY": 0.75, 
-        "COIN_COUNT": 50 
+        "CRATE_DENSITY": 0.3,
+        "COIN_COUNT": 9
     }, 
     # this is the tournament game mode
+    "classic": {
+        "CRATE_DENSITY": 0.75,
+        "COIN_COUNT": 9
+    }
+    # Feel free to add more game modes and properties
+    # game is created in environment.py -> BombeRLeWorld -> build_arena()
+}
+
+SCENARIOS_TRAIN = {
+    # modes useful for agent development
+    "coin-heaven": {
+        "CRATE_DENSITY": 0,
+        "COIN_COUNT": 50
+    },
+    "loot-crate": {
+        "CRATE_DENSITY": 0.5,
+        "COIN_COUNT": 20
+    },
     "classic": {
         "CRATE_DENSITY": 0.75,
         "COIN_COUNT": 9
